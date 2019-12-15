@@ -13,7 +13,7 @@ enum StyleSheet: String {
 }
 
 public extension Node where Context == HTML.HeadContext {
-    static func stylesheet(_ styleSheet: StyleSheet) -> Node {
+    static internal func stylesheet(_ styleSheet: StyleSheet) -> Node {
         .stylesheet(styleSheet.rawValue)
     }
 }
