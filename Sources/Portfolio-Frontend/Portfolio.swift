@@ -7,8 +7,12 @@ public func getHtml() -> String {
             .title("Talip Goeksu"),
             .meta(.charset(.utf8)),
             .viewport(.accordingToDevice, initialScale: 1),
-            .stylesheet(.bootstrapCore),
-            .stylesheet(.coverTemplate)
+            .forEach(getStyleSheets()) {
+                .stylesheet($0)
+            },
+            .forEach(getFonts()) {
+                .font($0)
+            }
         ),
         .body(
             .class("text-center"),
