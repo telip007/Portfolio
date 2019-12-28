@@ -26,9 +26,6 @@ let package = Package(
         .target(name: "Portfolio-Backend",
                 dependencies: ["Portfolio-Frontend", "Vapor"]),
         .target(name: "Run",
-                dependencies: ["Portfolio-Backend"]),
-        .testTarget(
-            name: "PortfolioTests",
-            dependencies: ["Portfolio-Backend"]),
+                dependencies: ["Portfolio-Backend"])
     ]
 )
