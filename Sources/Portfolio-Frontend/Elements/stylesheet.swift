@@ -8,8 +8,8 @@
 import Plot
 
 enum StyleSheet: String {
-    case bootstrapCore = "Resources/Vendor/bootstrap/css/bootstrap.min.css"
-    case graysclale = "Resources/grayscale.min.css"
+    case bootstrapCore = "Vendor/bootstrap/css/bootstrap.min.css"
+    case graysclale = "styles/grayscale.css"
 }
 
 public extension Node where Context == HTML.HeadContext {
